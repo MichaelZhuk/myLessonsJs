@@ -14,4 +14,3 @@ for (let i = 0; i < weather.length; i++) {
   console.log(getRandomArrayElement(weather));
 }
 
-dd

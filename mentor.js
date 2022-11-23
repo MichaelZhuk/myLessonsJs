@@ -44,13 +44,39 @@
 
 // console.log(showObjectKey(1, "age"));
 
-let mass = [1,8,3,4,5,6,7];
+// let mass = [1,8,3,4,5,6,7];
 
-let maxNumber = 1000;
-for(let i  = 0; i < mass.length; i++ ){
-  if(mass[i] < maxNumber){
-    maxNumber = mass[i];
-  }
+// let maxNumber = 1000;
+// for(let i  = 0; i < mass.length; i++ ){
+//   if(mass[i] < maxNumber){
+//     maxNumber = mass[i];
+//   }
 
+// }
+// console.log(maxNumber);
+
+
+// for (let arrMass of mass){
+//     console.log(arrMass);
+// }
+
+
+//// mass.entries();
+
+//// console.log( Array.from(mass.entries().filter (i =>  i[1] == 'Nana')));
+
+let mass = [1,1,2,3,'Nana','Nana', 5,5];
+let mass2 = [];
+let massSortSame = [...new Set(mass)];
+
+console.log(massSortSame);
+
+for ( let i = 0; i < mass.length; i++){
+    if('string' === typeof mass[i]) {
+       console.log( mass2[i] = mass[i])
+    } 
+    
+    
 }
-console.log(maxNumber);
+
+
