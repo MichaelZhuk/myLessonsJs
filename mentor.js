@@ -172,17 +172,17 @@
 
 // console.log(fInvert(arrEl));
 
-const list = [1,2,3,156,-1];
+// const list = [1,2,3,156,-1];
 
-const min = list => {
-return Math.min(...list);
-};
+// const min = list => {
+// return Math.min(...list);
+// };
 
-const max = list => {
-  return Math.max(...list);
-};
+// const max = list => {
+//   return Math.max(...list);
+// };
 
-console.log(min(list), max(list));
+// console.log(min(list), max(list));
 
 // let mass = [1,8,3,4,5,6,7];
 
@@ -196,30 +196,73 @@ console.log(min(list), max(list));
 // }
 // console.log(maxNumber);
 
-const massMax = [1, 8, 3, 4, 5, 6, -7, 100];
+// const massMax = [1, 8, 3, 4, 5, 6, -7, 100];
 
-let maxNumber = -1000;
+// let maxNumber = -1000;
 
-const funkMax = () => {
-  for (let i = 0; i < massMax.length; i++) {
-    if (massMax[i] > maxNumber) {
-      maxNumber = massMax[i];
-    }
-  }
-  return maxNumber;
-};
-console.log(funkMax(maxNumber) + ' Наибольшее число в массиве');
+// const funkMax = () => {
+//   for (let i = 0; i < massMax.length; i++) {
+//     if (massMax[i] > maxNumber) {
+//       maxNumber = massMax[i];
+//     }
+//   }
+//   return maxNumber;
+// };
+// console.log(funkMax(maxNumber) + ' Наибольшее число в массиве');
 
-const massMin = [-1, 2, 4, -50];
+// const massMin = [-1, 2, 4, -50];
 
-let minNumber = 1000;
+// let minNumber = 1000;
 
-const funkMin = () =>{
-for (let i = 0; i < massMin.length; i++) {
-  if (massMin[i] < minNumber) {
-    minNumber = massMin[i];
-  }
-}
-return minNumber;
-};
-console.log(funkMin(minNumber) + ' Меньшее число в массиве');
+// const funkMin = () =>{
+// for (let i = 0; i < massMin.length; i++) {
+//   if (massMin[i] < minNumber) {
+//     minNumber = massMin[i];
+//   }
+// }
+// return minNumber;
+// };
+// console.log(funkMin(minNumber) + ' Меньшее число в массиве');
+
+// function multiplesOf(integer, limit) {
+//      let multiples = []
+
+//      for (var i = 0; i < integer.length; i++) {
+//        if (integer[i] % limit === 0) {
+//          multiples.push(integer[i]);
+//        }
+//      }
+
+//      return multiples;
+//    }
+
+//    console.log(multiplesOf([2, 4, 5, 6, 7], 2));
+
+// const mass = [1,2,3];
+
+// const funk = () => {
+//   let result = [];
+//   for (let i = 0; i < mass.length; i++){
+//     result[i] = mass[i];
+//   }
+//   return result;
+// }
+
+// console.log(funk());
+
+
+// for (let i = 0; i < mass.length; i++) {
+  //   if (mass[i] < 0) {
+    //     console.log(mass[i]);
+    //   }
+    // }
+    
+const mass = [-1, 2, 3, -5];
+
+mass.map((item,index)=>{
+  console.log(item,index);
+});
+
+// методы массивов 
+// собирать вопросы
+// структуры данных стек . очередь
