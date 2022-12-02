@@ -250,19 +250,48 @@
 
 // console.log(funk());
 
-
 // for (let i = 0; i < mass.length; i++) {
-  //   if (mass[i] < 0) {
-    //     console.log(mass[i]);
-    //   }
-    // }
-    
-const mass = [-1, 2, 3, -5];
+//   if (mass[i] < 0) {
+//     console.log(mass[i]);
+//   }
+// }
 
-mass.map((item,index)=>{
-  console.log(item,index);
+// const mass = [-1, 2, 3, -5];
+
+// mass.map((item,index)=>{
+//   console.log(item,index);
+// });
+
+// let arrayNumbers = [1, 2, 3, -10, 0, 4, 5 - 8];
+// let arrayDooble = [];
+
+// for (let i = 0; i < arrayNumbers.length; i++) {
+//   if (arrayNumbers[i] > 0) {
+//     arrayDooble[i] = arrayNumbers[i];
+//   }
+// }
+
+// let filTer = arrayNumbers.filter(cur => cur > 0);
+
+// console.log(filTer);
+
+let ar = [1, 2, 3, -4];
+let newAr = [];
+
+ar.push(4, 5, "Sobaca");
+
+newAr = ar.map((ar) => {
+  return ar + 1;
 });
 
-// методы массивов 
+newAr = newAr.filter((newAr) => {
+  return newAr < 0;
+});
+
+console.log(newAr);
+
+// методы массивов
 // собирать вопросы
 // структуры данных стек . очередь
+
+// добавить ssh ключ
