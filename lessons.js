@@ -154,20 +154,142 @@
 // // console.log(a);
 // // console.log(b);
 
-
-
 // let c = a.map(a => {
 //     return a;
 // });
 
 // console.log(c);
 
+// let newStak = [12,'23'];
 
-let newStak = [];
+// newStak.push('1');
+// newStak.push('2');
+// newStak.shift();
+// newStak.pop();
+// console.log(newStak);
 
-newStak.push('1');
-newStak.push('2');
+//
 
-newStak.pop();
+// function pow(x, n) {
+//     for (let i = 0; i < 10; i++) {
+//     }
+//     let result = x *= n;
 
-console.log(newStak);
+//     return result;
+//   }
+
+//   console.log(pow(5,2));
+
+// const getMassive = (a,b) => {
+//     const array = [];
+//     let result = 0;
+//     let str = '';
+//     for(let i = 0; i <= b; i++){
+//         result += a;
+//         array[i] = result;
+//     }
+//     array.map((value,index) => {
+//         str += value;
+//         if(index !== b){
+//             str += '---';
+
+//         }
+//     });
+
+//     return  str;
+// };
+
+// console.log(getMassive(5,2));
+
+// const task = (a, b) => {
+//   let result = "";
+//   let temp = 0;
+//   for (let i = 0; i <= b; i++) {
+//     result += temp += a;
+//     if (b > i) {
+//       result += "---";
+//     }
+//   }
+//   return result;
+// };
+
+// console.log(task(3, 6));
+
+// первый раздел
+// вопросы
+
+// function getMathResult(num, times) {
+//   if (typeof(times) !== 'number' || times <= 0) {
+//       return num;
+//   }
+
+//   let str = '';
+
+//   for (let i = 1; i <= times; i++) {
+//       if (i === times) {
+//           str += `${num * i}`;
+//           // Тут без черточек в конце
+//       } else {
+//           str += `${num * i}---`;
+//           // Это тоже самое, что и
+//           // str = str + num * i + "---"
+//       }
+//   }
+
+//   return str;
+// }
+
+// console.log (getMathResult(10, 5));
+
+// let runNumbers = (a, b) => {
+//   if (typeof(b) !== "number" || b <= 0) {
+//     return a;
+//   }
+//   let temp = 0;
+//   let result = "";
+//   for (let i = 0; i < b; i++) {
+//     result += temp += a;
+
+//     if (b - 1 > i) {
+//       result += "---";
+//     }
+//   }
+//   return result;
+// };
+
+// console.log(runNumbers(3, 3));
+
+
+
+
+
+// const putInType = (a) =>{
+//   if (typeof (a) === 'number'){
+//     return a % 2 == 0;
+//   } else {
+//     return console.log('NoT a number');
+//   }
+
+// };
+
+// console.log(putInType(4));
+
+
+
+
+// const array = [1,2,3,-4];
+
+
+
+
+// let filtArray = array.filter((intem) =>{
+//   if(intem > 0){
+//     return intem;
+//   }
+// });
+
+// console.log(filtArray);
+
+
+
+

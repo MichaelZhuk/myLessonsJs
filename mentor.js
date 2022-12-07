@@ -275,23 +275,162 @@
 
 // console.log(filTer);
 
-let ar = [1, 2, 3, -4];
-let newAr = [];
+// let ar = [1, 2, 3, -4];
+// let newAr = [];
 
-ar.push(4, 5, "Sobaca");
+// ar.push(4, 5, "Sobaca");
 
-newAr = ar.map((ar) => {
-  return ar + 1;
-});
+// newAr = ar.map((ar) => {
+//   return ar + 1;
+// });
 
-newAr = newAr.filter((newAr) => {
-  return newAr < 0;
-});
+// newAr = newAr.filter((newAr) => {
+//   return newAr < 0;
+// });
 
-console.log(newAr);
+// console.log(newAr);
 
 // методы массивов
 // собирать вопросы
 // структуры данных стек . очередь
 
 // добавить ssh ключ
+
+// let arr = [1, -1, +1];
+// arr.push("and1");
+// console.log(arr);
+// arr.shift();
+// console.log(arr);
+// arr.pop();
+// console.log(arr);
+// arr.unshift("11");
+// console.log(arr);
+// delete arr[0];
+// console.log(arr);
+
+// let arr2 = arr.map((item) => {
+//   return item + 1;
+// });
+
+// console.log(arr2);
+
+// let arr3 = arr.filter((item) => {
+//   return item > 0;
+// });
+
+// console.log(arr3);
+
+// function flatten(...stak){
+//   const result = [];
+//   while(stak.length){
+//     const el = stak.shift();
+//     if(Array.isArray(el)){
+//       stak.unshift(...el);
+//       continue;
+//     }
+//     result.push(el);
+//   }
+//   return result;
+// }
+
+// console.log(flatten(1,2,[3,4],5,[6,7,8]));
+
+// let f = ( a) =>{
+// return a;
+// }
+
+// console.log(f('Something'));
+
+// let arr = ['old1','old2','old3'];
+
+// for (let i = 0; i < arr.length; i++){
+// arr.shift();
+// arr.push('newEl');
+// console.log(arr);
+// }
+
+// let currentD = 41;
+// let currentE = 41.5;
+// let discont = 0.9;
+
+// let fCalc = (value, value2) => {
+//   return value * value2;
+// };
+
+// function promoution() {
+//   return fCalc(currentD, currentE) * discont;
+// }
+
+// console.log(promoution());
+
+// let f = ( ) => {
+//   for(let i = 0; i < 5; i++){
+//     console.log(i);
+//     if(i === 3) return;
+//   }
+//   console.log('Done');
+// }
+
+// f();
+
+// function doNothing(){
+
+// };
+
+// console.log(doNothing() === undefined);
+
+// console.log('1');
+
+// let sayHellow = name => 'Hello ' + name;
+
+// console.log(sayHellow('Ivan'));
+// console.log(sayHellow('NeIvan'));
+
+// let array = [];
+
+// function returnNeighboringNumbers(arg) {
+//   for (let i = 0; i < 3; i++) {
+//     array[0] = arg - 1;
+//     array[1] = arg;
+//     array[2] = arg + 1;
+//   }
+//   return array;
+// }
+
+// console.log(returnNeighboringNumbers(10));
+
+// function getMathResult(firstNumber,secondNumber) {
+// let i = 0;
+// let quantity = secondNumber;
+// while (i < quantity){
+//   firstNumber *= secondNumber;
+//   i++;
+// }
+//  return firstNumber;
+// };
+
+// console.log(getMathResult(5,2));
+
+// let number1 = 3;
+// let number2 = 2;
+// let array = [];
+// let i = 0;
+
+// while ( i < number2){
+//   number1 += number1;
+//   i++;
+//   console.log(number1);
+// }
+
+// let array = [];
+
+// const calcProgression = (a, b) => {
+//   for (let i = 0; i < b; i += a) {
+//     result = array[i] = a *= b;
+//   }
+//   return result;
+// };
+// console.log(calcProgression(5, 2));
+
+
+
