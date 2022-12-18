@@ -259,10 +259,6 @@
 
 // console.log(runNumbers(3, 3));
 
-
-
-
-
 // const putInType = (a) =>{
 //   if (typeof (a) === 'number'){
 //     return a % 2 == 0;
@@ -274,13 +270,7 @@
 
 // console.log(putInType(4));
 
-
-
-
 // const array = [1,2,3,-4];
-
-
-
 
 // let filtArray = array.filter((intem) =>{
 //   if(intem > 0){
@@ -290,6 +280,176 @@
 
 // console.log(filtArray);
 
+// let array = [1, { name: "John", age: 31 }, -1, [], ""];
+// let emptyArray = [];
 
+// let arrayFilter = array.filter((index) => {
+//   if (index < 0) {
+//     return index;
+//   }
+// });
+// console.log(arrayFilter);
+// let arrayMap = array.map((index) => {
+//   return (emptyArray = index);
+// });
+// console.log(arrayMap);
+// let getEmptyArray = () => {
+//   for (let i = 0; i < array.length; i++) {
+//     emptyArray[i] = array[i];
+//   }
+//   return emptyArray;
+// };
+// console.log(getEmptyArray());
+// let changeArray = array.map((intem) => {
+//   if(intem > 0 && intem !== 'string'){
+//     return intem;
+//   }
+// });
+// console.log(changeArray);
+
+// function sayHello(name) {
+//   return 'Привет, '  + name;
+// }
+
+// console.log(sayHello('Aynjy'));
+
+// const getNumber = (number,numGenerate) =>{
+//   let zero = 0;
+//   let result = '';
+//   for(let i = 0; i < numGenerate;i++){
+//    result +=  zero +=number
+//     if(numGenerate-1 > i){
+//       result += '---';
+//     }
+//   }
+//   if(typeof(numGenerate) !== 'number' ||  numGenerate <=0){
+//     return number;
+//   }
+
+//   return  result;
+// }
+
+// console.log(getNumber(5,3));
+
+// const num = 'Some Fruts';
+
+// console.log(num.slice(5,10));
+
+// const newObject = {
+//   property: 'a',
+//   local: [1,2,3],
+//   addict: {},
+//   name: 'we dont now'
+// }
+
+// const doneObject = (change) => {
+//   if(change){
+
+//    console.log(newObject.name);
+//   }
+// };
+// doneObject(newObject.property);
+
+// function calculateVolumeAndArea(length) {
+//   if (typeof length !== "number" || length < 0 || !Number.isInteger(length)) {
+//     return "При вычислении произошла ошибка";
+//   }
+
+//   let volume = 0,
+//     area = 0;
+
+//   volume = length * length * length;
+
+//   area = 6 * (length * length);
+
+//   return `Объем куба: ${volume}, площадь всей поверхности: ${area}`;
+// }
+
+// console.log(calculateVolumeAndArea(3));
+
+// string
+// number
+// Boolean
+// Object
+// null
+// undefined
+// BigInt
+// Symbol
+
+// умножить длинну широту и высоту
+
+// function getCoupeNumber(seatNumber) {
+//   if (typeof (seatNumber) !== 'number' || seatNumber < 0 || !Number.isInteger(seatNumber)) {
+//       return "Ошибка. Проверьте правильность введенного номера места";
+//   }
+
+//   if (seatNumber === 0 || seatNumber > 36) {
+//       return "Таких мест в вагоне не существует";
+//   }
+
+//   return Math.ceil(seatNumber / 4);
+
+// }
+
+// console.log (getCoupeNumber(7));
+
+// // const numB = 2.5;
+
+// // console.log(!Number.isInteger(numB));
+
+// const objPerson = {
+//   name: 'Alex',
+//   age: 150,
+//   childrens:['Vadim','Aleh'],
+//   status: 'm'
+// }
+
+// const statusOfPerson = () => {
+//   if(objPerson.status !== 'married'){
+//     objPerson.childrens = [];
+//     return objPerson.childrens
+//   }
+//   return objPerson.status;
+// };
+// statusOfPerson()
+
+// console.log(objPerson);
+
+// const fibAna = (arg) => {
+//   let result = "";
+//   let first = 0;
+//   let second = 1;
+
+//   for (let i = 0; i < arg; i++) {
+//     if (i + 1 === arg) {
+//       result += `${first}`;
+//     } else {
+//       result += `${first} `;
+//     }
+
+//     let third = first + second;
+//     first = second;
+//     second = third;
+//   }
+//   return result;
+// };
+
+// console.log(fibAna(1));
+
+// const trany = (arg) => {
+//   let first = 0;
+//   let second = 1;
+//   let result = "";
+//   for (let i = 0; i < arg; i++) {
+//     result += `${first} `;
+
+//     let third = first + second;
+//     first = second;
+//     second = third;
+//   }
+//   return result;
+// };
+
+// console.log(trany(100));
 
 

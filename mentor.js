@@ -432,5 +432,94 @@
 // };
 // console.log(calcProgression(5, 2));
 
+// const getTime = (min) => {
+//   let result = "";
+//   let temp;
+//   temp = Math.floor(min / 60);
+//   if (temp < 5) {
+//     result = `${temp} часа`;
+//   } else if (temp === 0) {
+//     result = `${temp}  часов`;
+//   } else {
+//     result = `${temp} час`;
+//   }
+
+//   temp = min % 60;
+
+//   if (temp === 1) {
+//     result += ` ${temp}  минута`;
+//   } else {
+//     result += ` ${temp} минут`;
+//   }
+
+//   return result;
+// };
+
+// console.log(getTime(230));
+
+// const giveBiggestNumber = (a,b,c,d) => {
+//    let result;
+//    if(typeof(a) !== 'number' ||
+//    typeof(b) !== 'number' ||
+//    typeof(c) !== 'number' ||
+//    typeof(d) !== 'number' ){
+//       return 'Put othen value';
+//    }
+//     else if(a > b && a > c && a > d){
+//       result = a;
+//    } else if(b > a && b > c && b > d){
+//       result = b;
+//    } else if(c > a && c > b && c > d){
+//       result = c;
+//    } else {
+//       result = d;
+//    }
+
+//    return `${result} Biggest number` ;
+// };
+
+// console.log(giveBiggestNumber(100,200,50));
+
+// const otherGetMaxAtribute = (a, b, c, d) => {
+//   let result;
+//   if (
+//     typeof a !== "number" ||
+//     typeof a !== "number" ||
+//     typeof a !== "number" ||
+//     typeof a !== "number"
+//   ) {
+//     return "Put the other value";
+//   }
+//   result = Math.max(a, b, c, d);
+//   return result;
+// };
+
+// console.log(otherGetMaxAtribute( '2' , 300, 4));
 
 
+function fib(num) {
+  if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+      return "";
+  }
+
+  let result = '';
+  let first = 0;
+  let second = 1;
+
+  for (let i = 0; i < num; i++) {
+      if (i + 1 === num) {
+          result += `${first} `;
+          
+      } else {
+          result += `${first} `;
+      }
+
+      let third = first + second;
+      first = second;
+      second = third;
+  }
+
+  return result;
+}
+
+console.log(fib(5));
