@@ -619,34 +619,35 @@
 // * Причем функция должна работать вне зависимости от количества языков. Если ни один не указан, то возвращается пустая строка.
 // ! P.S. Для переноса строки используется \n в конце строки.
 
-const personalPlanPeter = {
-  name: "Peter",
-  age: "29",
-  skills: {
-    languages: ["ru", "eng"],
-    programmingLangs: {
-      js: "20%",
-      php: "10%",
+// const personalPlanPeter = {
+//   name: "Peter",
+//   age: "29",
+//   skills: {
+//     languages: ["ru", "eng"],
+//     programmingLangs: {
+//       js: "20%",
+//       php: "10%",
       
-    },
-    exp: "1 month",
-  },
+//     },
+//     exp: "1 month",
+//   },
  
-};
+// };
 
-const showExspirience = (personalPlanPeter, lang, proc) => {
-  let result;
-  let newArg;
-  if (lang) {
-    newArg = `Язык ${lang} , изучен на ${proc}`;
-    result = personalPlanPeter.skills.programmingLangs = newArg;
-    return result;
-  }
-  return "Empty string";
-};
+// const showExspirience = (personalPlanPeter, lang, proc) => {
+//   let result;
+//   let newArg;
+//   if (lang) {
+//     newArg = `Язык ${lang} , изучен на ${proc}`;
+//     result = personalPlanPeter.skills.programmingLangs = newArg;
+//     return result;
+//   }
+//   return "Empty string";
+// };
 
 
-showExspirience(personalPlanPeter, );
+// showExspirience(personalPlanPeter, );
 
-console.log(personalPlanPeter.skills.programmingLangs);
+// console.log(personalPlanPeter.skills.programmingLangs);
+
 
