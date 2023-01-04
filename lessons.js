@@ -452,4 +452,140 @@
 
 // console.log(trany(100));
 
+// const options = {
+//   name: "test",
+//   width: 1024,
+//   height: 1024,
+//   colors: {
+//     border: "black",
+//     bg: "red",
+//   },
+//   makeTest: () => {
+//     console.log("testnetest");
+//   },
+// };
+
+// options.makeTest();
+// console.log(Object.keys(options).length);
+// const { border, bg } = options.colors; // деструктуризация
+// console.log(border, bg);
+
+// delete options.name;
+// console.log(options);
+
+// let cuonter = 0;
+// for (let key in options) {
+//   if (typeof options[key] === "object") {
+//     for (let i in options[key]) {
+//       console.log(`свойство ${i} параметр ${options[key][i]}`);
+//     }
+//   } else {
+//     console.log(`свойство ${key} параметр ${options[key]}`);
+//     cuonter++;
+//   }
+// }
+// console.log(cuonter);
+
+// for(let i = 0; i < arr.length; i++){
+//   console.log(arr[i]);
+// }
+
+// for (let value of arr){
+//   console.log(value);
+// }
+
+// const arrObj = {
+//   a:[5,6,7,8,9]
+// };
+
+// const copObj = (arrObj) => {
+//   let copyOfArrObj = {};
+//   let i;
+//   for(i in arrObj){
+//     copyOfArrObj[i] = arrObj[i];
+//   }
+//   return copyOfArrObj;
+// };
+
+// console.log(copObj(arrObj));
+
+
+
+// const personalPlanPeter = {
+//     name: "Peter",
+//     age: "29",
+//     skills: {
+//         languages: ['ru', 'eng'],
+//         programmingLangs: {
+//             js: '20%',
+//             php: '10%'
+//         },
+//         exp: '1 month'
+//     }
+// };
+
+// const showExp = (personalPlanPeter) => {
+   
+    
+//     let exp = personalPlanPeter.skills.exp;
+//     return exp;
+// };
+
+// console.log(showExp());
+
+
+// const new2 = {
+// name : {
+//     first: 'Body',
+//     second: 'Rafic',
+// },
+// action: ()=>{
+//     return `time for ${new2.name.first}`;
+// }
+// }
+
+// console.log(new2.action());
+
+// const personalPlanPeter = {
+//     name: "Peter",
+//     age: "29",
+//     skills: {
+//       languages: ["ru", "eng"],
+//       programmingLangs: {
+//         js: "20%",
+//         php: "10%",
+//         python: '30%'
+//       },
+//       exp: "1 month",
+//     },
+//     action: () => {
+//       let result = '';
+//       for (const key in personalPlanPeter.skills.programmingLangs) {
+//         result += `Язык ${key} изучен на ${personalPlanPeter.skills.programmingLangs[key]} \n` ;
+//       };
+//       console.log(result);
+//     }
+//   };
+// ? personalPlanPeter.action();
+
+
+
+//? const someObj = {
+//   properti1: ['K','a','P'] ,
+//   property2: {
+//     a: '1',
+//     b: '2',
+//     c: '3',
+    
+//   },
+//   action: () => {
+//     let result = '';
+//     for (const key in someObj.property2) {
+//      result += ` chanje${key}  ${someObj.property2[key] } \n`;
+//     }
+//     console.log(result);
+//   }
+// ?};
+// ?someObj.action();
+
 

@@ -496,30 +496,157 @@
 
 // console.log(otherGetMaxAtribute( '2' , 300, 4));
 
+// function fib(num) {
+//   if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+//       return "";
+//   }
 
-function fib(num) {
-  if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
-      return "";
+//   let result = '';
+//   let first = 0;
+//   let second = 1;
+
+//   for (let i = 0; i < num; i++) {
+//       if (i + 1 === num) {
+//           result += `${first} `;
+
+//       } else {
+//           result += `${first} `;
+//       }
+
+//       let third = first + second;
+//       first = second;
+//       second = third;
+//   }
+
+//   return result;
+// }
+
+// console.log(fib(5));
+
+// let sum = 21;
+// let num = '21';
+
+// console.log(typeof(num) !== typeof(sum));
+
+// console.log(`${sum} wo sup`);
+
+// const nameKal = (name, Kal) => {
+//     console.log(`I like ${name}`);
+//     Kal();
+// };
+
+// nameKal('Gavno',() => {
+//     console.log('You like gavno!');
+//     setTimeout(()=>{
+//         console.log('Otsosi');
+//     },2000);
+// });
+
+// const f1 = ( b) => {
+
+//     b();
+//     console.log(b);
+// }
+
+// f1( () =>{
+//     console.log('Woooo sup!' );
+// });
+
+// let name = 'Stas';
+
+// let name2 = name;
+// name = 'Micola';
+
+// console.log(name);
+
+// let age = 25;
+// age = 15;
+// console.log(age);
+
+// const randArray = ['first','Second','Third','Fifth'];
+
+// const group2 = randArray.slice();
+
+// group2[0] = 'ne f';
+// let group3 = randArray.slice(3);
+// console.log(randArray);
+// console.log(group2);
+// console.log(group3);
+
+// const person = {
+//     name: 'Petro',
+//     age: 15
+// }
+
+// const fireMan = Object.assign(person,{age:30, name: 'Ne Pedro'});
+
+// console.log(fireMan);
+
+// const worker = {...person};
+
+// worker.name = 'Ne';
+
+// console.log(worker);
+
+// const personalPlanPeter = {
+//   name: "Peter",
+//   age: "29",
+//   skills: {
+//     languages: ["ru", "eng"],
+//     programmingLangs: {
+//       js: "20%",
+//       php: "10%",
+//     },
+//     exp: "1 month",
+//   },
+// };
+
+// const showExspirience = (personalPlanPeter) => {
+//   if (personalPlanPeter.skills.exp) {
+//     return personalPlanPeter.skills.exp;
+//   }
+//   return (personalPlanPeter.skills.exp = "2 month");
+// };
+
+// console.log(showExspirience(personalPlanPeter));
+
+// console.log(personalPlanPeter.skills.exp);
+
+// ? 2) Напишите функцию showProgrammingLangs, которая будет принимать в себя объект со всеми данными и возвращать строку в нужном виде.
+// ? Пример:
+// ? showProgrammingLangs(personalPlanPeter)  =>
+// ? "Язык js изучен на 20% Язык php изучен на 10%"
+// * Причем функция должна работать вне зависимости от количества языков. Если ни один не указан, то возвращается пустая строка.
+// ! P.S. Для переноса строки используется \n в конце строки.
+
+const personalPlanPeter = {
+  name: "Peter",
+  age: "29",
+  skills: {
+    languages: ["ru", "eng"],
+    programmingLangs: {
+      js: "20%",
+      php: "10%",
+      
+    },
+    exp: "1 month",
+  },
+ 
+};
+
+const showExspirience = (personalPlanPeter, lang, proc) => {
+  let result;
+  let newArg;
+  if (lang) {
+    newArg = `Язык ${lang} , изучен на ${proc}`;
+    result = personalPlanPeter.skills.programmingLangs = newArg;
+    return result;
   }
+  return "Empty string";
+};
 
-  let result = '';
-  let first = 0;
-  let second = 1;
 
-  for (let i = 0; i < num; i++) {
-      if (i + 1 === num) {
-          result += `${first} `;
-          
-      } else {
-          result += `${first} `;
-      }
+showExspirience(personalPlanPeter, );
 
-      let third = first + second;
-      first = second;
-      second = third;
-  }
+console.log(personalPlanPeter.skills.programmingLangs);
 
-  return result;
-}
-
-console.log(fib(5));
