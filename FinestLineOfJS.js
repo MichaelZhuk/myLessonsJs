@@ -1,62 +1,62 @@
-const family = ["Peter", "Ann", "Alex", "Linda"];
+// const family = ["Peter", "Ann", "Alex", "Linda"];
 
-function showFamily(arr) {
-  if (family.length !== 0) {
-    for (let index = 0; index < family.length; index++) {
-      let arr = "";
-      arr += family[index];
-    }
-    console.log(` Семья состоит из ${arr}`);
-  } else {
-    console.log("Пустая строка");
-  }
-}
+// function showFamily(arr) {
+//   if (family.length !== 0) {
+//     for (let index = 0; index < family.length; index++) {
+//       let arr = "";
+//       arr += family[index];
+//     }
+//     console.log (` Семья состоит из ${arr}`);
+//   } else {
+//     console.log("Пустая строка");
+//   }
+// }
 
-showFamily(family);
+// showFamily(family);
 
-const favoriteCities = ["liSBon", "ROME", "miLan", "Dublin"];
+// const favoriteCities = ["liSBon", "ROME", "miLan", "Dublin"];
 
-function standardizeStrings() {
-  for (let index = 0; index < favoriteCities.length; index++) {
-    let arr = "";
-    arr += favoriteCities[index];
-    console.log(arr.toLowerCase());
-  }
-}
+// function standardizeStrings() {
+//   for (let index = 0; index < favoriteCities.length; index++) {
+//     let arr = "";
+//     arr += favoriteCities[index];
+//     console.log(arr.toLowerCase());
+//   }
+// }
 
-standardizeStrings(favoriteCities);
+// standardizeStrings(favoriteCities);
 
-const someString = 'lol - kek';
+// const someString = 'lol - kek';
 
-const reverse = (someString) => {
-  let newString = '';
-  for (let index = someString.length -1; index >= 0; index--) {
-    newString += someString[index];
+// const reverse = (someString) => {
+//   let newString = '';
+//   for (let index = someString.length -1; index >= 0; index--) {
+//     newString += someString[index];
 
-  }
-  console.log( newString );
-};
+//   }
+//   console.log( newString );
+// };
 
-reverse(someString);
+// reverse(someString);
 
-const arr = [1, 2, 3, 4, 5, 6, 7];
+// const arr1 = [1, 2, 3, 4, 5, 6, 7];
 
-const reverseArr = (arr) => {
-  let result = "";
-  for (let index = arr.length - 1; index >= 0; index--) {
-    result += arr[index];
-  }
-  console.log(result);
-};
-reverseArr(arr);
+// const reverseArr = (arr) => {
+//   let result = "";
+//   for (let index = arr.length - 1; index >= 0; index--) {
+//     result += arr[index];
+//   }
+//   console.log(result);
+// };
+// reverseArr(arr);
 
-const arr = [1,-2,3,4,5,6,7];
+// const arr = [1,-2,3,4,5,6,7];
 
-const a = arr.filter((intem) => {
-  return intem > 0 ;
-})
+// const a = arr.filter((intem) => {
+//   return intem > 0 ;
+// })
 
-console.log(a);
+// console.log(a);
 
 //!  4) Представьте такую реальную ситуацию. У вас есть банкомат, который 
 //!  выдает деньги из двух разных банков в разных валютах. 

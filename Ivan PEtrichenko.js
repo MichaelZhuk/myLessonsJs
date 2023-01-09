@@ -1,22 +1,18 @@
 "use strict";
 
-let numberOfFilms;
-
-const start = () => {
-  numberOfFilms = +prompt("Khow many movies did you saw?", "");
-
-  while (numberOfFilms == "" || numberOfFilms == null || isNaN(numberOfFilms)) {
-    numberOfFilms = +prompt("Khow many movies did you saw?", "");
-  }
-};
-start();
-
 const personalMovieDb = {
-  count: numberOfFilms,
+  count: 0,
   movies: {},
   actors: {},
   genres: [],
   privat: false,
+  start: () => {
+    personalMovieDb.count = +prompt("Khow many movies did you saw?", "");
+  
+    while (personalMovieDb.count == "" || personalMovieDb.count == null || isNaN(personalMovieDb.count)) {
+      personalMovieDb.count = +prompt("Khow many movies did you saw?", "");
+    }
+  }
 };
 
 const rememberMyFilms = () => {
@@ -59,13 +55,13 @@ const showMyDB = (hidden) => {
     console.log(personalMovieDb);
 
   }
-}
+};
 showMyDB(personalMovieDb.privat);
 
-const writeYourGenres = () => {
+const writeYourGenres = ( ) => {
   for(let i = 1; i <= 3; i++){
 
-    personalMovieDb.genres[i - 1] = prompt(`Your favorite ganres with number ${i}`);
+    personalMovieDb.genres[i - 1] = prompt (`Your favorite ganres with number ${i}`);
   }
 };
 writeYourGenres();
