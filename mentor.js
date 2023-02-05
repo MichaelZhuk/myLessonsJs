@@ -1,616 +1,615 @@
-// . Найти максимум в массиве
+//! Найти максимум в массиве
 
-// .найти число которое чаще всего встречается в массиве
+//!найти число которое чаще всего встречается в массиве
 
-// .найти среднее арифметическое и переписать числа больше него в другой массив
+// !найти среднее арифметическое и переписать числа больше него в другой массив
 
-// объект из трех полей
-// имя
-// фамилия
-// возраст
+//! объект из трех полей
+//? имя
+//? фамилия
+//? возраст
+//! сделать массив из объектов и научиться обращаться к полям объекта
+//! сделать функцию вывода конкретного поля объекта
+//! человек как обьект
+//! сделать максимально юольшим обьектом и Массивыпопробовать пообращаться к каждому элементу .
+//! Гдето через точку гдето через переменную, скобки
 
-// сделать массив из объектов и научиться обращаться к полям объекта
+let obj = {
+  name: {
+    name1:'1',
+    name2:'2',
+    name3:{ }
+   },
+  surname: "Bony",
+  age: [12,13,14,15],
+};
 
-// сделать функцию вывода конкретного поля объекта
+let arr = [obj, obj];
 
-// человек как обьект
-// сделать максимально юольшим обьектом и Массивыпопробовать пообращаться к каждому элементу .
-// Гдето через точку гдето через переменную, скобки
+console.log(arr[1].name);
 
-// let obj = {
-//   name: {
-//     name1:'1',
-//     name2:'2',
-//     name3:{ }
-//    },
-//   surname: "Bony",
-//   age: [12,13,14,15],
-// };
+const newNAme = "age";
 
-// let arr = [obj, obj];
+console.log(arr[1][newNAme]);
 
-// // console.log(arr[1].name);
 
-// const newNAme = "age";
 
-// // console.log(arr[1][newNAme]);
+const showObjectKey = (indexArr, objKey) => {
+  return arr[indexArr][objKey];
+};
 
-// const showObjectKey = (indexArr, objKey) => {
-//   return arr[indexArr][objKey];
-// };
+console.log(showObjectKey(1, "age"));
 
-// console.log(showObjectKey(1, "age"));
+let mass = [1,8,3,4,5,6,7];
 
-// let mass = [1,8,3,4,5,6,7];
+let maxNumber = 1000;
+for(let i  = 0; i < mass.length; i++ ){
+  if(mass[i] < maxNumber){
+    maxNumber = mass[i];
+  }
 
-// let maxNumber = 1000;
-// for(let i  = 0; i < mass.length; i++ ){
-//   if(mass[i] < maxNumber){
-//     maxNumber = mass[i];
-//   }
+}
+console.log(maxNumber);
 
-// }
-// console.log(maxNumber);
+for (let arrMass of mass){
+    console.log(arrMass);
+}
 
-// for (let arrMass of mass){
-//     console.log(arrMass);
-// }
+mass.entries();
 
-//// mass.entries();
+console.log( Array.from(mass.entries().filter (i =>  i[1] == 'Nana')));
 
-//// console.log( Array.from(mass.entries().filter (i =>  i[1] == 'Nana')));
+let mass = [1,1,2,3,'Nana','Nana', 5,5];
+let mass2 = [];
+let massSortSame = [...new Set(mass)];
 
-// let mass = [1,1,2,3,'Nana','Nana', 5,5];
-// let mass2 = [];
-// let massSortSame = [...new Set(mass)];
+console.log(massSortSame);
 
-// console.log(massSortSame);
+for ( let i = 0; i < mass.length; i++){
+    if('string' === typeof mass[i]) {
+       console.log( mass2[i] = mass[i])
+    }
 
-// for ( let i = 0; i < mass.length; i++){
-//     if('string' === typeof mass[i]) {
-//        console.log( mass2[i] = mass[i])
-//     }
+}
 
-// }
+console.log(funkCulc());
 
-// console.log(funkCulc());
+let mass = [1, 1, 2, 3, "Nana", "Nana", 5, 5];
 
-// let mass = [1, 1, 2, 3, "Nana", "Nana", 5, 5];
+const set = new Set(mass);
 
-// const set = new Set(mass);
+const duplicates = mass.filter(item => {
+    if (set.has(item)) {
+        set.delete(item);
+    } else {
+        return item;
+    }
+});
 
-// const duplicates = mass.filter(item => {
-//     if (set.has(item)) {
-//         set.delete(item);
-//     } else {
-//         return item;
-//     }
-// });
+console.log(duplicates);
 
-// console.log(duplicates);
+const mass = [1, 1, 2, 3, "Nana", "Nana", 5, 5];
 
-// const mass = [1, 1, 2, 3, "Nana", "Nana", 5, 5];
+const result = mass.indexOf("Nana");
 
-// const result = mass.indexOf("Nana");
+if (result !== -1) {
+  console.log(mass[result]);
+}
 
-// if (result !== -1) {
-//   console.log(mass[result]);
-// }
+let num = (a) => {
+  return +a;
+};
+console.log(num("11"));
 
-// let num = (a) => {
-//   return +a;
-// };
-// console.log(num("11"));
+const toNamber = parseInt("12");
+console.log(toNamber);
 
-// const toNamber = parseInt("12");
-// console.log(toNamber);
+const mass = [1, 1, 2, 3, "Nana", "Nana", 5, 5];
 
-// const mass = [1, 1, 2, 3, "Nana", "Nana", 5, 5];
+let funkCulc = () => {
+  for (let i = 0; i < mass.length; i++) {
+    return mass[i];
+  }
+};
 
-// let funkCulc = () => {
-//   for (let i = 0; i < mass.length; i++) {
-//     return mass[i];
-//   }
-// };
+console.log(funkCulc());
 
-// console.log(funkCulc());
+let str = "1234";
 
-// let str = "1234";
+const changeType = () => {
+  let num = Number(str);
+  return num;
+};
 
-// const changeType = () => {
-//   let num = Number(str);
-//   return num;
-// };
+console.log(changeType());
 
-// console.log(changeType());
+const funkProgram = (integer, limit) => {
+ if (integer % limit ){
+    return  integer + limit  ;
+ }
 
-// const funkProgram = (integer, limit) => {
-//  if (integer % limit ){
-//     return  integer + limit  ;
-//  }
+};
 
-// };
+console.log( funkProgram(2,4));
 
-// console.log( funkProgram(2,4));
+function multiplesOf(integer) {
+   var multiples = numbers[0];
 
-// function multiplesOf(integer) {
-//    var multiples = numbers[0];
+   for (var i = 0; i < integer.length; i++) {
+     if (numbers[i] % multiples === 0) {
+       multiples = numbers[i];
+     }
+   }
 
-//    for (var i = 0; i < integer.length; i++) {
-//      if (numbers[i] % multiples === 0) {
-//        multiples = numbers[i];
-//      }
-//    }
+   return multiples;
+ }
 
-//    return multiples;
-//  }
+ console.log(multiplesOf([4, 5, 6, 7, 8], 2));
 
-//  console.log(multiplesOf([4, 5, 6, 7, 8], 2));
+function multiplesOf(integer, limit) {
+   let multiples = []
 
-// function multiplesOf(integer, limit) {
-//    let multiples = []
+   for (var i = 0; i < integer.length; i++) {
+     if (integer[i] % limit === 0) {
+       multiples.push(integer[i]);
+     }
+   }
 
-//    for (var i = 0; i < integer.length; i++) {
-//      if (integer[i] % limit === 0) {
-//        multiples.push(integer[i]);
-//      }
-//    }
+   return multiples;
+ }
 
-//    return multiples;
-//  }
+ console.log(multiplesOf([2, 4, 5, 6, 7], 2));
 
-//  console.log(multiplesOf([2, 4, 5, 6, 7], 2));
+let arrEl = [-1, 2, 3, 4, 5];
 
-// let arrEl = [-1, 2, 3, 4, 5];
+const fInvert = (arrEl) => {
+  for (let i = 0; i < arrEl.length; i++) {
+    arrEl[i] = arrEl[i] * -1;
+  }
+  return arrEl;
+};
 
-// const fInvert = (arrEl) => {
-//   for (let i = 0; i < arrEl.length; i++) {
-//     arrEl[i] = arrEl[i] * -1;
-//   }
-//   return arrEl;
-// };
+console.log(fInvert(arrEl));
 
-// console.log(fInvert(arrEl));
+const list = [1,2,3,156,-1];
 
-// const list = [1,2,3,156,-1];
+const min = list => {
+return Math.min(...list);
+};
 
-// const min = list => {
-// return Math.min(...list);
-// };
+const max = list => {
+  return Math.max(...list);
+};
 
-// const max = list => {
-//   return Math.max(...list);
-// };
+console.log(min(list), max(list));
 
-// console.log(min(list), max(list));
+let mass = [1,8,3,4,5,6,7];
 
-// let mass = [1,8,3,4,5,6,7];
+let maxNumber = 1000;
 
-// let maxNumber = 1000;
+for(let i  = 0; i < mass.length; i++ ){
+  if(mass[i] < maxNumber){
+    maxNumber = mass[i];
+  }
 
-// for(let i  = 0; i < mass.length; i++ ){
-//   if(mass[i] < maxNumber){
-//     maxNumber = mass[i];
-//   }
+}
+console.log(maxNumber);
 
-// }
-// console.log(maxNumber);
+const massMax = [1, 8, 3, 4, 5, 6, -7, 100];
 
-// const massMax = [1, 8, 3, 4, 5, 6, -7, 100];
+let maxNumber = -1000;
 
-// let maxNumber = -1000;
+const funkMax = () => {
+  for (let i = 0; i < massMax.length; i++) {
+    if (massMax[i] > maxNumber) {
+      maxNumber = massMax[i];
+    }
+  }
+  return maxNumber;
+};
+console.log(funkMax(maxNumber) + ' Наибольшее число в массиве');
 
-// const funkMax = () => {
-//   for (let i = 0; i < massMax.length; i++) {
-//     if (massMax[i] > maxNumber) {
-//       maxNumber = massMax[i];
-//     }
-//   }
-//   return maxNumber;
-// };
-// console.log(funkMax(maxNumber) + ' Наибольшее число в массиве');
+const massMin = [-1, 2, 4, -50];
 
-// const massMin = [-1, 2, 4, -50];
+let minNumber = 1000;
 
-// let minNumber = 1000;
+const funkMin = () =>{
+for (let i = 0; i < massMin.length; i++) {
+  if (massMin[i] < minNumber) {
+    minNumber = massMin[i];
+  }
+}
+return minNumber;
+};
+console.log(funkMin(minNumber) + ' Меньшее число в массиве');
 
-// const funkMin = () =>{
-// for (let i = 0; i < massMin.length; i++) {
-//   if (massMin[i] < minNumber) {
-//     minNumber = massMin[i];
-//   }
-// }
-// return minNumber;
-// };
-// console.log(funkMin(minNumber) + ' Меньшее число в массиве');
+function multiplesOf(integer, limit) {
+     let multiples = []
 
-// function multiplesOf(integer, limit) {
-//      let multiples = []
+     for (var i = 0; i < integer.length; i++) {
+       if (integer[i] % limit === 0) {
+         multiples.push(integer[i]);
+       }
+     }
 
-//      for (var i = 0; i < integer.length; i++) {
-//        if (integer[i] % limit === 0) {
-//          multiples.push(integer[i]);
-//        }
-//      }
+     return multiples;
+   }
 
-//      return multiples;
-//    }
+   console.log(multiplesOf([2, 4, 5, 6, 7], 2));
 
-//    console.log(multiplesOf([2, 4, 5, 6, 7], 2));
+const mass = [1,2,3];
 
-// const mass = [1,2,3];
+const funk = () => {
+  let result = [];
+  for (let i = 0; i < mass.length; i++){
+    result[i] = mass[i];
+  }
+  return result;
+}
 
-// const funk = () => {
-//   let result = [];
-//   for (let i = 0; i < mass.length; i++){
-//     result[i] = mass[i];
-//   }
-//   return result;
-// }
+console.log(funk());
 
-// console.log(funk());
+for (let i = 0; i < mass.length; i++) {
+  if (mass[i] < 0) {
+    console.log(mass[i]);
+  }
+}
 
-// for (let i = 0; i < mass.length; i++) {
-//   if (mass[i] < 0) {
-//     console.log(mass[i]);
-//   }
-// }
+const mass = [-1, 2, 3, -5];
 
-// const mass = [-1, 2, 3, -5];
+mass.map((item,index)=>{
+  console.log(item,index);
+});
 
-// mass.map((item,index)=>{
-//   console.log(item,index);
-// });
+let arrayNumbers = [1, 2, 3, -10, 0, 4, 5 - 8];
+let arrayDooble = [];
 
-// let arrayNumbers = [1, 2, 3, -10, 0, 4, 5 - 8];
-// let arrayDooble = [];
+for (let i = 0; i < arrayNumbers.length; i++) {
+  if (arrayNumbers[i] > 0) {
+    arrayDooble[i] = arrayNumbers[i];
+  }
+}
 
-// for (let i = 0; i < arrayNumbers.length; i++) {
-//   if (arrayNumbers[i] > 0) {
-//     arrayDooble[i] = arrayNumbers[i];
-//   }
-// }
+let filTer = arrayNumbers.filter(cur => cur > 0);
 
-// let filTer = arrayNumbers.filter(cur => cur > 0);
+console.log(filTer);
 
-// console.log(filTer);
+let ar = [1, 2, 3, -4];
+let newAr = [];
 
-// let ar = [1, 2, 3, -4];
-// let newAr = [];
+ar.push(4, 5, "Sobaca");
 
-// ar.push(4, 5, "Sobaca");
+newAr = ar.map((ar) => {
+  return ar + 1;
+});
 
-// newAr = ar.map((ar) => {
-//   return ar + 1;
-// });
+newAr = newAr.filter((newAr) => {
+  return newAr < 0;
+});
 
-// newAr = newAr.filter((newAr) => {
-//   return newAr < 0;
-// });
+console.log(newAr);
 
-// console.log(newAr);
+методы массивов
+собирать вопросы
+структуры данных стек . очередь
 
-// методы массивов
-// собирать вопросы
-// структуры данных стек . очередь
+добавить ssh ключ
 
-// добавить ssh ключ
+let arr = [1, -1, +1];
+arr.push("and1");
+console.log(arr);
+arr.shift();
+console.log(arr);
+arr.pop();
+console.log(arr);
+arr.unshift("11");
+console.log(arr);
+delete arr[0];
+console.log(arr);
 
-// let arr = [1, -1, +1];
-// arr.push("and1");
-// console.log(arr);
-// arr.shift();
-// console.log(arr);
-// arr.pop();
-// console.log(arr);
-// arr.unshift("11");
-// console.log(arr);
-// delete arr[0];
-// console.log(arr);
+let arr2 = arr.map((item) => {
+  return item + 1;
+});
 
-// let arr2 = arr.map((item) => {
-//   return item + 1;
-// });
+console.log(arr2);
 
-// console.log(arr2);
+let arr3 = arr.filter((item) => {
+  return item > 0;
+});
 
-// let arr3 = arr.filter((item) => {
-//   return item > 0;
-// });
+console.log(arr3);
 
-// console.log(arr3);
+function flatten(...stak){
+  const result = [];
+  while(stak.length){
+    const el = stak.shift();
+    if(Array.isArray(el)){
+      stak.unshift(...el);
+      continue;
+    }
+    result.push(el);
+  }
+  return result;
+}
 
-// function flatten(...stak){
-//   const result = [];
-//   while(stak.length){
-//     const el = stak.shift();
-//     if(Array.isArray(el)){
-//       stak.unshift(...el);
-//       continue;
-//     }
-//     result.push(el);
-//   }
-//   return result;
-// }
+console.log(flatten(1,2,[3,4],5,[6,7,8]));
 
-// console.log(flatten(1,2,[3,4],5,[6,7,8]));
+let f = ( a) =>{
+return a;
+}
 
-// let f = ( a) =>{
-// return a;
-// }
+console.log(f('Something'));
 
-// console.log(f('Something'));
+let arr = ['old1','old2','old3'];
 
-// let arr = ['old1','old2','old3'];
+for (let i = 0; i < arr.length; i++){
+arr.shift();
+arr.push('newEl');
+console.log(arr);
+}
 
-// for (let i = 0; i < arr.length; i++){
-// arr.shift();
-// arr.push('newEl');
-// console.log(arr);
-// }
+let currentD = 41;
+let currentE = 41.5;
+let discont = 0.9;
 
-// let currentD = 41;
-// let currentE = 41.5;
-// let discont = 0.9;
+let fCalc = (value, value2) => {
+  return value * value2;
+};
 
-// let fCalc = (value, value2) => {
-//   return value * value2;
-// };
+function promoution() {
+  return fCalc(currentD, currentE) * discont;
+}
 
-// function promoution() {
-//   return fCalc(currentD, currentE) * discont;
-// }
+console.log(promoution());
 
-// console.log(promoution());
+let f = ( ) => {
+  for(let i = 0; i < 5; i++){
+    console.log(i);
+    if(i === 3) return;
+  }
+  console.log('Done');
+}
 
-// let f = ( ) => {
-//   for(let i = 0; i < 5; i++){
-//     console.log(i);
-//     if(i === 3) return;
-//   }
-//   console.log('Done');
-// }
+f();
 
-// f();
+function doNothing(){
 
-// function doNothing(){
+};
 
-// };
+console.log(doNothing() === undefined);
 
-// console.log(doNothing() === undefined);
+console.log('1');
 
-// console.log('1');
+let sayHellow = name => 'Hello ' + name;
 
-// let sayHellow = name => 'Hello ' + name;
+console.log(sayHellow('Ivan'));
+console.log(sayHellow('NeIvan'));
 
-// console.log(sayHellow('Ivan'));
-// console.log(sayHellow('NeIvan'));
+let array = [];
 
-// let array = [];
-
-// function returnNeighboringNumbers(arg) {
-//   for (let i = 0; i < 3; i++) {
-//     array[0] = arg - 1;
-//     array[1] = arg;
-//     array[2] = arg + 1;
-//   }
-//   return array;
-// }
-
-// console.log(returnNeighboringNumbers(10));
-
-// function getMathResult(firstNumber,secondNumber) {
-// let i = 0;
-// let quantity = secondNumber;
-// while (i < quantity){
-//   firstNumber *= secondNumber;
-//   i++;
-// }
-//  return firstNumber;
-// };
-
-// console.log(getMathResult(5,2));
-
-// let number1 = 3;
-// let number2 = 2;
-// let array = [];
-// let i = 0;
-
-// while ( i < number2){
-//   number1 += number1;
-//   i++;
-//   console.log(number1);
-// }
-
-// let array = [];
-
-// const calcProgression = (a, b) => {
-//   for (let i = 0; i < b; i += a) {
-//     result = array[i] = a *= b;
-//   }
-//   return result;
-// };
-// console.log(calcProgression(5, 2));
+function returnNeighboringNumbers(arg) {
+  for (let i = 0; i < 3; i++) {
+    array[0] = arg - 1;
+    array[1] = arg;
+    array[2] = arg + 1;
+  }
+  return array;
+}
+
+console.log(returnNeighboringNumbers(10));
+
+function getMathResult(firstNumber,secondNumber) {
+let i = 0;
+let quantity = secondNumber;
+while (i < quantity){
+  firstNumber *= secondNumber;
+  i++;
+}
+ return firstNumber;
+};
+
+console.log(getMathResult(5,2));
+
+let number1 = 3;
+let number2 = 2;
+let array = [];
+let i = 0;
+
+while ( i < number2){
+  number1 += number1;
+  i++;
+  console.log(number1);
+}
+
+let array = [];
 
-// const getTime = (min) => {
-//   let result = "";
-//   let temp;
-//   temp = Math.floor(min / 60);
-//   if (temp < 5) {
-//     result = `${temp} часа`;
-//   } else if (temp === 0) {
-//     result = `${temp}  часов`;
-//   } else {
-//     result = `${temp} час`;
-//   }
-
-//   temp = min % 60;
+const calcProgression = (a, b) => {
+  for (let i = 0; i < b; i += a) {
+    result = array[i] = a *= b;
+  }
+  return result;
+};
+console.log(calcProgression(5, 2));
 
-//   if (temp === 1) {
-//     result += ` ${temp}  минута`;
-//   } else {
-//     result += ` ${temp} минут`;
-//   }
-
-//   return result;
-// };
+const getTime = (min) => {
+  let result = "";
+  let temp;
+  temp = Math.floor(min / 60);
+  if (temp < 5) {
+    result = `${temp} часа`;
+  } else if (temp === 0) {
+    result = `${temp}  часов`;
+  } else {
+    result = `${temp} час`;
+  }
 
-// console.log(getTime(230));
+  temp = min % 60;
 
-// const giveBiggestNumber = (a,b,c,d) => {
-//    let result;
-//    if(typeof(a) !== 'number' ||
-//    typeof(b) !== 'number' ||
-//    typeof(c) !== 'number' ||
-//    typeof(d) !== 'number' ){
-//       return 'Put othen value';
-//    }
-//     else if(a > b && a > c && a > d){
-//       result = a;
-//    } else if(b > a && b > c && b > d){
-//       result = b;
-//    } else if(c > a && c > b && c > d){
-//       result = c;
-//    } else {
-//       result = d;
-//    }
+  if (temp === 1) {
+    result += ` ${temp}  минута`;
+  } else {
+    result += ` ${temp} минут`;
+  }
 
-//    return `${result} Biggest number` ;
-// };
+  return result;
+};
 
-// console.log(giveBiggestNumber(100,200,50));
+console.log(getTime(230));
 
-// const otherGetMaxAtribute = (a, b, c, d) => {
-//   let result;
-//   if (
-//     typeof a !== "number" ||
-//     typeof a !== "number" ||
-//     typeof a !== "number" ||
-//     typeof a !== "number"
-//   ) {
-//     return "Put the other value";
-//   }
-//   result = Math.max(a, b, c, d);
-//   return result;
-// };
+const giveBiggestNumber = (a,b,c,d) => {
+   let result;
+   if(typeof(a) !== 'number' ||
+   typeof(b) !== 'number' ||
+   typeof(c) !== 'number' ||
+   typeof(d) !== 'number' ){
+      return 'Put othen value';
+   }
+    else if(a > b && a > c && a > d){
+      result = a;
+   } else if(b > a && b > c && b > d){
+      result = b;
+   } else if(c > a && c > b && c > d){
+      result = c;
+   } else {
+      result = d;
+   }
 
-// console.log(otherGetMaxAtribute( '2' , 300, 4));
+   return `${result} Biggest number` ;
+};
 
-// function fib(num) {
-//   if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
-//       return "";
-//   }
+console.log(giveBiggestNumber(100,200,50));
 
-//   let result = '';
-//   let first = 0;
-//   let second = 1;
+const otherGetMaxAtribute = (a, b, c, d) => {
+  let result;
+  if (
+    typeof a !== "number" ||
+    typeof a !== "number" ||
+    typeof a !== "number" ||
+    typeof a !== "number"
+  ) {
+    return "Put the other value";
+  }
+  result = Math.max(a, b, c, d);
+  return result;
+};
 
-//   for (let i = 0; i < num; i++) {
-//       if (i + 1 === num) {
-//           result += `${first} `;
+console.log(otherGetMaxAtribute( '2' , 300, 4));
 
-//       } else {
-//           result += `${first} `;
-//       }
+function fib(num) {
+  if (typeof(num) !== 'number' || num <= 0 || !Number.isInteger(num)) {
+      return "";
+  }
 
-//       let third = first + second;
-//       first = second;
-//       second = third;
-//   }
+  let result = '';
+  let first = 0;
+  let second = 1;
 
-//   return result;
-// }
+  for (let i = 0; i < num; i++) {
+      if (i + 1 === num) {
+          result += `${first} `;
 
-// console.log(fib(5));
+      } else {
+          result += `${first} `;
+      }
 
-// let sum = 21;
-// let num = '21';
+      let third = first + second;
+      first = second;
+      second = third;
+  }
 
-// console.log(typeof(num) !== typeof(sum));
+  return result;
+}
 
-// console.log(`${sum} wo sup`);
+console.log(fib(5));
 
-// const nameKal = (name, Kal) => {
-//     console.log(`I like ${name}`);
-//     Kal();
-// };
+let sum = 21;
+let num = '21';
 
-// nameKal('Gavno',() => {
-//     console.log('You like gavno!');
-//     setTimeout(()=>{
-//         console.log('Otsosi');
-//     },2000);
-// });
+console.log(typeof(num) !== typeof(sum));
 
-// const f1 = ( b) => {
+console.log(`${sum} wo sup`);
 
-//     b();
-//     console.log(b);
-// }
+const nameKal = (name, Kal) => {
+    console.log(`I like ${name}`);
+    Kal();
+};
 
-// f1( () =>{
-//     console.log('Woooo sup!' );
-// });
+nameKal('Gavno',() => {
+    console.log('You like gavno!');
+    setTimeout(()=>{
+        console.log('Otsosi');
+    },2000);
+});
 
-// let name = 'Stas';
+const f1 = ( b) => {
 
-// let name2 = name;
-// name = 'Micola';
+    b();
+    console.log(b);
+}
 
-// console.log(name);
+f1( () =>{
+    console.log('Woooo sup!' );
+});
 
-// let age = 25;
-// age = 15;
-// console.log(age);
+let name = 'Stas';
 
-// const randArray = ['first','Second','Third','Fifth'];
+let name2 = name;
+name = 'Micola';
 
-// const group2 = randArray.slice();
+console.log(name);
 
-// group2[0] = 'ne f';
-// let group3 = randArray.slice(3);
-// console.log(randArray);
-// console.log(group2);
-// console.log(group3);
+let age = 25;
+age = 15;
+console.log(age);
 
-// const person = {
-//     name: 'Petro',
-//     age: 15
-// }
+const randArray = ['first','Second','Third','Fifth'];
 
-// const fireMan = Object.assign(person,{age:30, name: 'Ne Pedro'});
+const group2 = randArray.slice();
 
-// console.log(fireMan);
+group2[0] = 'ne f';
+let group3 = randArray.slice(3);
+console.log(randArray);
+console.log(group2);
+console.log(group3);
 
-// const worker = {...person};
+const person = {
+    name: 'Petro',
+    age: 15
+}
 
-// worker.name = 'Ne';
+const fireMan = Object.assign(person,{age:30, name: 'Ne Pedro'});
 
-// console.log(worker);
+console.log(fireMan);
 
-// const personalPlanPeter = {
-//   name: "Peter",
-//   age: "29",
-//   skills: {
-//     languages: ["ru", "eng"],
-//     programmingLangs: {
-//       js: "20%",
-//       php: "10%",
-//     },
-//     exp: "1 month",
-//   },
-// };
+const worker = {...person};
 
-// const showExspirience = (personalPlanPeter) => {
-//   if (personalPlanPeter.skills.exp) {
-//     return personalPlanPeter.skills.exp;
-//   }
-//   return (personalPlanPeter.skills.exp = "2 month");
-// };
+worker.name = 'Ne';
 
-// console.log(showExspirience(personalPlanPeter));
+console.log(worker);
 
-// console.log(personalPlanPeter.skills.exp);
+const personalPlanPeter = {
+  name: "Peter",
+  age: "29",
+  skills: {
+    languages: ["ru", "eng"],
+    programmingLangs: {
+      js: "20%",
+      php: "10%",
+    },
+    exp: "1 month",
+  },
+};
+
+const showExspirience = (personalPlanPeter) => {
+  if (personalPlanPeter.skills.exp) {
+    return personalPlanPeter.skills.exp;
+  }
+  return (personalPlanPeter.skills.exp = "2 month");
+};
+
+console.log(showExspirience(personalPlanPeter));
+
+console.log(personalPlanPeter.skills.exp);
 
 // ? 2) Напишите функцию showProgrammingLangs, которая будет принимать в себя объект со всеми данными и возвращать строку в нужном виде.
 // ? Пример:
@@ -619,35 +618,35 @@
 // * Причем функция должна работать вне зависимости от количества языков. Если ни один не указан, то возвращается пустая строка.
 // ! P.S. Для переноса строки используется \n в конце строки.
 
-// const personalPlanPeter = {
-//   name: "Peter",
-//   age: "29",
-//   skills: {
-//     languages: ["ru", "eng"],
-//     programmingLangs: {
-//       js: "20%",
-//       php: "10%",
+const personalPlanPeter = {
+  name: "Peter",
+  age: "29",
+  skills: {
+    languages: ["ru", "eng"],
+    programmingLangs: {
+      js: "20%",
+      php: "10%",
       
-//     },
-//     exp: "1 month",
-//   },
+    },
+    exp: "1 month",
+  },
  
-// };
+};
 
-// const showExspirience = (personalPlanPeter, lang, proc) => {
-//   let result;
-//   let newArg;
-//   if (lang) {
-//     newArg = `Язык ${lang} , изучен на ${proc}`;
-//     result = personalPlanPeter.skills.programmingLangs = newArg;
-//     return result;
-//   }
-//   return "Empty string";
-// };
+const showExspirience = (personalPlanPeter, lang, proc) => {
+  let result;
+  let newArg;
+  if (lang) {
+    newArg = `Язык ${lang} , изучен на ${proc}`;
+    result = personalPlanPeter.skills.programmingLangs = newArg;
+    return result;
+  }
+  return "Empty string";
+};
 
 
-// showExspirience(personalPlanPeter, );
+showExspirience(personalPlanPeter, );
 
-// console.log(personalPlanPeter.skills.programmingLangs);
+console.log(personalPlanPeter.skills.programmingLangs);
 
 
